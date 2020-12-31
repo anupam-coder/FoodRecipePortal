@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-xs-10">
+    <app-shopping-edit></app-shopping-edit>
+    <hr>
+    <ul class="list-group">
+      <a
+        class="list-group-item"
+        style="cursor: pointer"
+        *ngFor="let ingredient of ingredients; let i = index"
+        (click)="onEditItem(i)"
+      >
+        {{ ingredient.name }} ({{ ingredient.amount }})
+      </a>
+    </ul>
+  </div>
+</div>
+<div>
+  <p>Want to shop from local shops?</p>
+  <p><strong>Help the local stores to grow amid the pandemic</strong></p>
+  <p class="blink">Highly Recommended</p>
+  <button style="margin: 5px;" 
+class="btn btn-success"
+type="button"
+(click)="store1()"
+>LocalMart</button>
+<button style="margin: 5px;" 
+class="btn btn-success"
+type="button"
+(click)="store2()"
+>Raghu Grocery Store</button>
+<button style="margin: 5px;" 
+class="btn btn-success"
+(click)="store3()"
+type="button"
+>Foodies hub</button>
+ 
+</div>
+
+
+
+
