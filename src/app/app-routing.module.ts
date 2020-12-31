@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
-import { LocalStoreComponent } from './local-store/local-store.component';
+//import { LocalStoreComponent } from './local-store/local-store.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/recipes', pathMatch: 'full' },
@@ -9,10 +9,10 @@ const appRoutes: Routes = [
     path: 'shopping-list',
     loadChildren: './shopping-list/shopping-list.module#ShoppingListModule'
   },
-  {
-    path: 'local-stores',
-    component: LocalStoreComponent
-  },
+  // {
+  //   path: 'local-stores',
+  //   component: LocalStoreComponent
+  // },
   {
     path: 'auth',
     loadChildren: './auth/auth.module#AuthModule'

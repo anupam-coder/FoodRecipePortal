@@ -8,12 +8,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core.module';
 import { LoggingService } from './logging.service';
-import { LocalStoreComponent } from './local-store/local-store.component';
-import { LocalStoreList } from './local-store/localStore-list/localStore-list.component';
-import { LocalStoreItem } from './local-store/localStore-item/localStore-item.component';
+// import { LocalStoreComponent } from './local-store/local-store.component';
+// import { LocalStoreList } from './local-store/localStore-list/localStore-list.component';
+// import { LocalStoreItem } from './local-store/localStore-item/localStore-item.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, LocalStoreComponent, LocalStoreList, LocalStoreItem],
+  declarations: [AppComponent, HeaderComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
